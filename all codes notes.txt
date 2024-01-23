@@ -10,4 +10,60 @@ int main()
 
 *Hello world*
 
- 
+ sum of all even number in the form of series upto the given limit
+
+
+...............................................................
+
+write a program to print odd  nnumber of series sum up to the given no,
+
+write a program to reverce a number
+example 493_394
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, rev = 0, remainder;
+    cout << "Enter a positive integer: ";
+    cin >> num;
+
+    while(num != 0) {
+        remainder = num%10;
+        rev*10 + remainder;
+        num /= 10;
+    }
+
+    cout << "Reversed Number = " << rev;
+
+    return 0;
+}
+
+
+write a program to check whether a number is a palindrome
+
+
+
+895 
+num=895
+rem stands for remainder
+rem=num::10
+reverse = 5
+num= num/10
+questiont will be 10
+rem num modulus 10
+rev*10+rem
+
+whikle num is not equal to 10
+while num is not equal to 10
+{
+rem = num modulus 10
+% }5
+=rev=rem
+num =num/10
+
+
+
+num with us 589
+ checks whether a given number is an Armstrong number or not.

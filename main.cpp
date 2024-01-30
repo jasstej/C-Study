@@ -1,32 +1,17 @@
-#include <cmath>
 #include <iostream>
 using namespace std;
 
+int factorial(int n) {
+    if (n == 0 || n == 1)
+        return 1;
+    else
+        return n * factorial(n - 1);
+}
+
 int main() {
-  int num, originalNum, remainder, n = 0, result = 0;
-
-  cout << "Enter a positive integer: ";
-  cin >> num;
-
-  originalNum = num;
-
-  while (originalNum != 0) {
-    originalNum /= 10;
-    ++n;
-  }
-
-  originalNum = num;
-
-  while (originalNum != 0) {
-    remainder = originalNum % 10;
-    result += pow(remainder, n);
-    originalNum /= 10;
-  }
-
-  if (result == num)
-    cout << num << " is an Armstrong number.";
-  else
-    cout << num << " is not an Armstrong number.";
-
-  return 0;
+    int number;
+    cout << "Enter a positive integer: ";
+    cin >> number;
+    cout << "Factorial of " << number << " = " << factorial(number);
+    return 0;
 }

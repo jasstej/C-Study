@@ -1,0 +1,130 @@
+write a program to pro=int hello worls in c++
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello World!" << endl;
+    return 0;
+}
+
+..................................................................
+WAP to get the sum of any two digits
+#include <iostream>
+using namespace std;
+
+int sumOfTwoDigits(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1, num2;
+    cout << "Enter two digits: ";
+    cin >> num1 >> num2;
+    cout << "Sum of the two digits: " << sumOfTwoDigits(num1, num2);
+    return 0;
+}
+.............................................
+WAP TO FIND THE SUM OF FIRST N NATURAL NUMBERS USING LOOP.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+    cout << "Enter a positive integer: ";
+    cin >> n;
+    for (int i = 1; i <= n; ++i) {
+        sum += i;
+    }
+    cout << "Sum of first " << n << " natural numbers = " << sum;
+    return 0;
+}
+
+.............................................
+WAP TO PRINT THE  SUM OF EVEN NO IN SERIES.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+    cout << "Enter the number of terms in the series: ";
+    cin >> n;
+
+    for (int i = 0; i <= n; i++) {
+        if (i % 2 == 0) {
+            sum += i;
+        }
+    }
+
+    cout << "The sum of even numbers in the series is: " << sum << endl;
+
+    return 0;
+}
+
+..........................................................................
+WAP TO PRINT THE SUM OF ODD NO IN SERIES.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+    cout << "Enter the number of terms in the series: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        if (i % 2 != 0) {
+            sum += i;
+        }
+    }
+
+    cout << "Sum of odd numbers in the series: " << sum;
+    return 0;
+}
+
+.........................................................................
+WAP TO SWAP AMONG TWO TERMS
+#include <iostream>
+using namespace std;
+
+void swap(int a, int b) {
+  int temp = a;
+  a = b;
+  b = temp;
+  cout << "After swapping: x = " << a << ", y = " << b << endl;
+}
+
+int main() {
+  int x = 5, y = 10;
+  cout << "Before swapping: x = " << x << ", y = " << y << endl;
+
+  swap(x, y);
+
+
+
+  return 0;
+}
+
+another one 
+
+#include <iostream>
+using namespace std;
+
+void swap(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    int x = 5, y = 10;
+    cout << "Before swapping: x = " << x << ", y = " << y << endl;
+
+    swap(x, y);
+
+    cout << "After swapping: x = " << x << ", y = " << y << endl;
+
+    return 0;
+}
+
+
+......................................................

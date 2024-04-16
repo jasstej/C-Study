@@ -2,19 +2,22 @@
 using namespace std;
 
 int main() {
-    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int key, flag = 0;
-    cout << "Enter the element to search: ";
-    cin >> key;
-    for (int i = 0; i < 10; ++i) {
-        if (arr[i] == key) {
-            cout << key << " found at index " << i << endl;
-            flag = 1;
-            break;
-        }
+  int num[5];
+  int target;
+  cout << "Enter the array: ";
+  for (int i = 0; i < 5; i++) {
+    cin >> num[i];
+  }
+  cout << "Enter the target: ";
+  cin >> target;
+
+  for (int i = 0; i < 5; i++) {
+    for (int j = i + 1; j < 5; j++) {
+      if (num[i] + num[j] == target) {
+        cout << "The indices of the two numbers that add up to the target are: " << i << " and " << j << endl;
+        
+      }
     }
-    if (flag == 0) {
-        cout << key << " not found in the array" << endl;
-    }
-    return 0;
+  }
+  return 0;
 }
